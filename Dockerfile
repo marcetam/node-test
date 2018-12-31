@@ -9,7 +9,6 @@ WORKDIR /opt/app
 
 ## Add application code
 COPY ./app /opt/app
-COPY ./public /data
 
 ## Allows port 3000 to be publicly available
 EXPOSE 3000
