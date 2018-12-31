@@ -1,0 +1,18 @@
+--- # devspaces.yml
+name: node-test
+description: Development environment for Node.js (simple test)
+
+docker-build-includes: |
+  **/*
+
+ports:
+  - protocol: http
+    port-number: 3000
+    description: web app http port
+
+sync-ignore: |
+  .git
+  .idea
+  **/node_modules
+  .DS_Store
+  .data
